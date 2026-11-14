@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<!-- seguridad: la obra es un solo archivo; no carga código externo ni se conecta a ningún servidor -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Robert’); DROP TABLE Students</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -240,7 +243,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
     if(last<src.length) hl(src.slice(last),out);
     return out;
   }
-  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
   function renderTokens(tk,N){
     var h='', left=N;
     for(var i=0;i<tk.length&&left>0;i++){
