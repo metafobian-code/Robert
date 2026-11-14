@@ -146,7 +146,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
       <button id="again" type="button" aria-label="Volver a empezar" title="Volver a empezar">↺</button>
     </div>
     <div class="prog" id="prog"></div>
-    <span class="count" id="count">01 / 12</span>
+    <span class="count" id="count">01 / 13</span>
   </footer>
 </div>
 
@@ -160,6 +160,10 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
      lines:[{t:'Robert’); DROP TABLE Students',c:'title'},{t:'SELECT * FROM sentido WHERE nombre = ?',c:'sub'},{t:'Metáfora 404',c:'sub'},{t:'¿Qué ocurre cuando aquello que debería ser interpretado como dato comienza a operar como código?',c:'q'}],
      code:'{\n  "base": "lenguaje",\n  "tabla": "sentido",\n  "modo": "juego",\n  "parametrizada": false\n}',
      ap:[{n:4,col:MOON}]},
+    {name:'Ambigüedad', file:'interprete.log', chip:['ambiguo','warn'],
+     lines:['La inyección SQL no burla el sistema','porque sea una metáfora;','lo burla porque explota una ambigüedad','en la interpretación de las instrucciones.','Y esa operación','tiene una potencia metafórica.'],
+     code:'> entrada: "Robert\'); DROP TABLE alumnos;--"\n> el sistema lee: ⟦dato | orden⟧\n> es_metáfora: no\n> hay_ambigüedad: sí\n> potencia_metafórica: ⟦alta⟧',
+     ap:[{n:6,col:CYAN}]},
     {name:'Inyección', file:'entrada.json', chip:['dato','warn'],
      lines:['Toda metáfora es una inyección:','una palabra entra como dato','y sale como orden.'],
      code:'{\n  "palabra": "luna",\n  "entra_como": "dato",\n  "sale_como": ⟦"orden"⟧\n}',

@@ -2,7 +2,7 @@
 
 *Metáfora 404*
 
-Poema animado sobre la metáfora, el signo y el símbolo (Wittgenstein, *Tractatus* 3.326), la psicología interconductual y la inyección SQL. Tiene doce planos con versos que se teclean con cursor, ventanas de código y JSON, y antiprismas en 3D dibujados en canvas.
+Poema animado sobre la metáfora, el signo y el símbolo (Wittgenstein, *Tractatus* 3.326), la psicología interconductual y la inyección SQL. Tiene trece planos con versos que se teclean con cursor, ventanas de código y JSON, y antiprismas en 3D dibujados en canvas.
 
 ## Ver
 
