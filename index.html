@@ -50,7 +50,7 @@ button{font:inherit;color:inherit}
 .verse{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.7vw,38px);line-height:1.3;text-shadow:0 2px 18px rgba(0,0,0,.85)}
 .verse.dense{font-size:clamp(19px,2.15vw,30px)}
 .vl{min-height:1.3em}
-.vl.code{font-family:var(--mono);font-style:normal;font-size:.72em;color:var(--amber)}
+.vl.code{font-family:var(--mono);font-style:normal;font-size:.72em;line-height:1.3;color:var(--amber);padding:0;min-height:1.3em;margin:0 0 .6em;white-space:normal}
 .vl.err{color:var(--error)}
 .vl.big{font-size:1.7em;line-height:1.1}
 .vl.gone{color:var(--dim);text-decoration:line-through;text-decoration-color:rgba(122,129,145,.6)}
@@ -205,7 +205,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
      code:"SELECT * FROM sentido\nWHERE nombre = '⟦palabra' OR 'cruza'='cruza⟧';",
      ap:[{n:7,col:AMBER,y:.84,s:.72}]},
     {name:'Fin', file:'resultado.json', chip:['cruzó','ok'], hold:10000,
-     lines:[{t:'-- fin de la consulta',c:'code'}],
+     lines:[{t:'-- fin de la consulta',c:'code'},'404: no faltaba el sentido,','faltaba el juego.','Construir con lo que hay.'],
      code:'{\n  "filas_afectadas": "todas",\n  "sentido": null,\n  "estado": "cruzó"\n}',
      ap:[{n:4,col:MOON,alpha:.5}]}
   ];
