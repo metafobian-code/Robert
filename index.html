@@ -56,6 +56,7 @@ button{font:inherit;color:inherit}
 .vl.gone{color:var(--dim);text-decoration:line-through;text-decoration-color:rgba(122,129,145,.6)}
 .vl.title{font-family:var(--mono);font-style:normal;font-size:clamp(26px,4.2vw,58px);line-height:1.15;letter-spacing:-.01em}
 .vl.sub{font-size:.62em;color:var(--dim);margin-top:.6em}
+.vl.q{font-size:.78em;line-height:1.35;color:var(--moon);margin-top:1.1em;max-width:30ch}
 .stage.glitch .verse{animation:rgb .22s steps(2) infinite}
 @keyframes rgb{0%{text-shadow:-2px 0 rgba(226,87,76,.85),2px 0 rgba(127,195,214,.6)}50%{text-shadow:2px 0 rgba(226,87,76,.85),-2px 0 rgba(127,195,214,.6)}}
 
@@ -124,6 +125,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
         <div class="vl title">Robert’); DROP TABLE Students</div>
         <div class="vl sub">SELECT * FROM sentido WHERE nombre = ?</div>
         <div class="vl sub">Metáfora 404</div>
+        <div class="vl q">¿Qué ocurre cuando aquello que debería ser interpretado como dato comienza a operar como código?</div>
       </div>
       <div class="right" id="right">
         <div class="panel">
@@ -155,7 +157,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
   // ⟦…⟧ = segmento inyectado · ⟪…⟫ = segmento comentado
   var SCENES=[
     {name:'Consulta', file:'conexion.json', chip:['conectado','ok'],
-     lines:[{t:'Robert’); DROP TABLE Students',c:'title'},{t:'SELECT * FROM sentido WHERE nombre = ?',c:'sub'},{t:'Metáfora 404',c:'sub'}],
+     lines:[{t:'Robert’); DROP TABLE Students',c:'title'},{t:'SELECT * FROM sentido WHERE nombre = ?',c:'sub'},{t:'Metáfora 404',c:'sub'},{t:'¿Qué ocurre cuando aquello que debería ser interpretado como dato comienza a operar como código?',c:'q'}],
      code:'{\n  "base": "lenguaje",\n  "tabla": "sentido",\n  "modo": "juego",\n  "parametrizada": false\n}',
      ap:[{n:4,col:MOON}]},
     {name:'Inyección', file:'entrada.json', chip:['dato','warn'],
