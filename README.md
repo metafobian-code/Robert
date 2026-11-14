@@ -1,4 +1,4 @@
-# WHERE nombre = ?
+# Robert’); DROP TABLE Students
 
 *Metáfora 404 · segunda parte*
 
