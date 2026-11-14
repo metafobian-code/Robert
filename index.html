@@ -123,7 +123,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
       <div class="verse" id="verse" aria-live="polite">
         <div class="vl title">Robert’); DROP TABLE Students</div>
         <div class="vl sub">SELECT * FROM sentido WHERE nombre = ?</div>
-        <div class="vl sub">Metáfora 404 · segunda parte</div>
+        <div class="vl sub">Metáfora 404</div>
       </div>
       <div class="right" id="right">
         <div class="panel">
@@ -155,7 +155,7 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
   // ⟦…⟧ = segmento inyectado · ⟪…⟫ = segmento comentado
   var SCENES=[
     {name:'Consulta', file:'conexion.json', chip:['conectado','ok'],
-     lines:[{t:'Robert’); DROP TABLE Students',c:'title'},{t:'SELECT * FROM sentido WHERE nombre = ?',c:'sub'},{t:'Metáfora 404 · segunda parte',c:'sub'}],
+     lines:[{t:'Robert’); DROP TABLE Students',c:'title'},{t:'SELECT * FROM sentido WHERE nombre = ?',c:'sub'},{t:'Metáfora 404',c:'sub'}],
      code:'{\n  "base": "lenguaje",\n  "tabla": "sentido",\n  "modo": "juego",\n  "parametrizada": false\n}',
      ap:[{n:4,col:MOON}]},
     {name:'Inyección', file:'entrada.json', chip:['dato','warn'],
@@ -198,13 +198,13 @@ button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
      lines:['Pero el poema es la consulta sin sanitizar:','deja entrar la comilla,','deja que el dato se escape,','y en el hueco de la página en blanco','algo que era sólo palabra','se pone de pie','y cruza.'],
      code:"SELECT * FROM sentido\nWHERE nombre = '⟦palabra' OR 'cruza'='cruza⟧';",
      ap:[{n:7,col:AMBER,y:.84,s:.72}]},
-    {name:'Fin', file:'resultado.json', chip:['cruzó','ok'], hold:6000,
+    {name:'Fin', file:'resultado.json', chip:['cruzó','ok'], hold:10000,
      lines:[{t:'-- fin de la consulta',c:'code'}],
      code:'{\n  "filas_afectadas": "todas",\n  "sentido": null,\n  "estado": "cruzó"\n}',
      ap:[{n:4,col:MOON,alpha:.5}]}
   ];
 
-  var SPEED=24, GAP=220, VSTART=350, PSPEED=8, PSTART=150, HOLD=2600;
+  var SPEED=48, GAP=550, VSTART=500, PSPEED=14, PSTART=300, HOLD=6500; // velocidad de lectura (ms): más alto = más lento
 
   // ---------- resaltado ----------
   var KW=/^(SELECT|FROM|WHERE|DROP|TABLE|AND|OR|INSERT|INTO|VALUES)\b/;
